@@ -6,7 +6,8 @@ public class Customer extends User {
 
 	public Customer() {
 	}
-	public Customer(int point) {
+	public Customer(String id, String pw, String name, int point) {
+		super(id, pw, name);
 		this.point = point;
 	}
 	
@@ -19,7 +20,7 @@ public class Customer extends User {
 	
 	@Override
 	public String toString() {
-		return "Customer [point=" + point + "]";
+		return "아이디:"+id+" 비번:"+pw+" 이름:"+name+" 포인트:"+point;
 	}
 
 }
